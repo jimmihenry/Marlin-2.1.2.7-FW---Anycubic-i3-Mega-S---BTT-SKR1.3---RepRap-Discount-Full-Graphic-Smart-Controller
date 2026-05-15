@@ -5,32 +5,56 @@ BTT SKR1.3.
 RepRapp Discount Full Graphic Smart Controller.
 TMC2208 (Stand Alone).
 
-DIE ANYLCUBIC-SPEZIFIKATION
+DIE ANYCUBIC-SPEZIFIKATION
 ----------------------------------------------------------------------------------------
 [x] 01. Hotend: PID-Tuning für V5 Original
+
 [x] 02. Bett: PID-Tuning für Ultrabase (SKR 1.3 optimiert)
+
 [x] 03. Extruder: 393 Steps für Titan-Geared-Drive
+
 [x] 04. Beschleunigung: 1200mm/s² (Materialschonend)
+
 [x] 05. Jerk: X5.0 Y2.0 (Gegen Geisterbilder auf Glas)
+
 [x] 06. Dimensionen: 210x210x205 + Offsets (-10/-11)
+
 [x] 07. Kommunikation: 32-Bit Turbo-Puffer (BUF 32 / TX 32)
+
 [x] 08. Display: Full Graphic 12864 (Western Charset)
+
 [x] 09. SD-Karte: LCD-Slot aktiv (Bequemes Laden)
+
 [x] 10. Motherboard: BTT SKR 1.3 (LPC1768)
+
 [x] 11. Endstops: Mechanisch 'false' / Z2 an Z-MAX
+
 [x] 12. 2te Z-Achse: E1-Pin-Fix & G34 Alignment
+
 [x] 13. Vorheizen: PLA (200/65) & ABS (235/85)
+
 [x] 14. Lüfter: Soft-PWM (gegen Pfeifen)
+
 [x] 15. Sicherheit: Emergency Parser (Sofort-Stopp)
+
 [x] 16. Filament: 550mm Unload / 540mm Load (Bowden-Spezial)
+
 [x] 17. Gedächtnis: EEPROM active (M500 / M502)
+
 [x] 18. Schutz: Z-Software-Endstop aktiv (Glas-Schutz)
+
 [x] 19. Audio: Speaker aktiv für G-Code Melodien
+
 [x] 20. Cooling: 120s Auto-Controller-Fan Nachlauf
+
 [x] 21. Treiber-Typ: 5x TMC2208 Standalone (Konfiguration über Hardware-Poti)
+
 [x] 22. Treiber-Schutz: Linear Advance deaktiviert (Verhindert TMC2208-Extruder-Lock)
+
 [x] 23. Daten-Sicherheit: TMC_DEBUG & MONITOR_DRIVER_STATUS inaktiv (Gegen M122-Absturz)
+
 [x] 24. Interface-Akustik: AUDIO_ENABLE_CLICK inaktiv (Volle Performance & stummes Menü)
+
 [x] 25. Dateisystem: FAT32 mit 1024 Byte Clustern (Schont 32-Bit-CPU & 128MB-Karte)
 
 Diese Aenderungen wurden vorgenommen:
@@ -193,7 +217,6 @@ F. @section manuell (SKR 1.3 Pin-Hacks):
    [x] #define Z2_DIR_PIN E1_DIR_PIN
    [x] #define Z2_ENABLE_PIN E1_ENABLE_PIN
 
-
 4. Build-Rezept & EEPROM-Aktivierung
 --------------------------------------------------------------------------------------------
 1. [x] VS Code: Mülleimer (Clean) klicken.
@@ -203,13 +226,11 @@ F. @section manuell (SKR 1.3 Pin-Hacks):
 5. [x] Pronterface verbinden -> Befehl M502 eingeben (Werkswerte laden).
 6. [x] Pronterface verbinden -> Befehl M500 eingeben (Dauerhaft speichern).
 
-
 5. Slicer End-G-Code (In Cura / PrusaSlicer eintragen)
 --------------------------------------------------------------------------------------------
 M104 S0 ; Extruder aus
 M140 S0 ; Bett aus
 M84     ; Motoren aus
-
 
 ; === Echte Anycubic End-Töne ===
 M300 S440 P200
