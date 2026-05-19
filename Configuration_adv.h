@@ -4274,7 +4274,7 @@
 //
 // MANUELLE Z-KONFIGURATION FUER ANYCUBIC DUAL-Z
 //
-#define NUM_Z_STEPPER 2             // Aktiviert den zweiten Z-Motor an E1
+#define NUM_Z_STEPPERS 2            // Aktiviert den zweiten Z-Motor an E1
 #define Z_STEPPER_ALIGN             // Ermöglicht das Gerade-Rücken der X-Achse (G34)
 #define Z_MULTI_ENDSTOPS            // Nutzt beide Z-Endstopps (Z-MIN & Z-MAX)
 //#define Z2_USE_ENDSTOP _ZMAX_       // Sagt Marlin: Zweiter Schalter steckt in Z-MAX oder zeile 844
